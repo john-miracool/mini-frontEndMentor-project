@@ -1,0 +1,566 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500&family=Roboto+Condensed&display=swap');
+
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --BACKGROUNDCOLOR-1 : #e95858;
+    --BACKGROUNDCOLOR-2 : #ebd5d5;
+    --BACKGROUNDCOLOR-3 : #000c31;
+
+/* ------- Text color ------------- */
+    --TEXTCOLOR: white;
+}
+body{
+    font-family: 'Roboto Condensed''Nunito Sans',;
+}
+
+header {
+    background-color: var(--BACKGROUNDCOLOR-2);
+    height: 20%;
+    width: 100%;
+    background-image: url(my-project-\ image.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0.5em 0 5rem;
+    align-items: center;
+}
+.nav-bar ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    background-color: var(--BACKGROUNDCOLOR-1);
+    height: 5rem;
+    width: 35rem;
+}
+.nav-bar li a  {
+    margin-inline: 1.5rem;
+    color: var(--TEXTCOLOR);
+} 
+
+.nav-bar UL button{
+    padding: 0.8rem;
+    color: var(--TEXTCOLOR);
+    width: 9rem;
+    border-style: none;
+    background-color: var(--BACKGROUNDCOLOR-3);
+}
+.hero{
+    margin-left: 5rem;
+    position: relative;
+}
+.hero h2 {
+    width: 20ch;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+.hero p {
+    width: 50ch;
+    font-size: larger;
+    font-weight: 400;
+}
+.hero button{
+    padding: 0.7em;
+    width: 7rem;
+    margin-top: 0.5em;
+    border: none;
+    background-color: var(--BACKGROUNDCOLOR-1);
+    color: var(--TEXTCOLOR);
+}
+
+/* ----------- body under the header ------------ */
+.top-section{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-auto-rows: 300px;
+}
+.top-right{
+    background-image: url(mini-project\ -img.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+.top-left{
+    background-color: black;
+    color: var(--TEXTCOLOR);
+    margin: auto;
+}
+.top-left h3 {
+    font-size: x-large;
+    width: 10ch;
+}
+.top-left h3 span{
+    color: var(--BACKGROUNDCOLOR-1);
+}
+.top-left p {
+    width: 50ch;
+    font-size: larger;
+}
+
+/* -------------- approach and strategy -------------- */
+.strategy {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.left-section{
+    height: 58vh;
+    margin-top: 5rem;
+}
+.left-section h1 {
+    width: 20ch;
+    float: right;
+    margin: 5rem -3rem 0 0;
+    position: relative;
+}
+.right-section{
+    color: var(--TEXTCOLOR);
+    padding: 3rem 5em;
+    height: 70vh;
+    background-color: var(--BACKGROUNDCOLOR-1);
+}
+.right-section h3 {
+    margin: 0.7em 0;
+}
+
+/* -------------- brand section ----------- */
+.brand-container{
+   display: grid;
+   grid-template-columns: 40% 60%;
+   grid-auto-rows: 200px;
+}
+.brand-left-section{
+    font-size: larger;
+    font-weight: 500;
+    background-color: #030118;
+    color: var(--TEXTCOLOR);
+}
+.brand-container h3{
+    width: 20ch;
+    margin: 4rem auto;
+}
+.brand-right-section{
+    background-image: url(books.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+}
+
+/* ------------------- my footer section --------------- */
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+.build {
+    font-size: larger; 
+    font-weight: bolder;
+     width: 30ch;
+}
+footer button {
+    padding: 0.8rem;
+    color: var(--TEXTCOLOR);
+    font-weight: bold;
+    width: 9rem;
+    border-style: none;
+    background-color: var(--BACKGROUNDCOLOR-1);
+}
+.our-contact {
+    background-color: #02011f;
+    height: fit-content;
+    color: var(--TEXTCOLOR);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-left: 2em;
+}
+.our-contact h2{
+    margin-top: 2.7rem;
+    font-size: xxx-large;
+    font-weight: bolder;
+}
+.our-contact p {
+    width: 30ch;
+    line-height: 30px;
+    margin-top: 0.8em;
+}
+
+.contact-request a{
+    display: block;
+    margin-top: 0.5em;
+    padding: 1.5em 0;
+    border-bottom: 1px solid #ffffff;
+    margin-right: 1em;
+}
+.contact-request button {
+    background-color: #5353ee27;
+    padding: 0.8rem;
+    color: var(--TEXTCOLOR);
+    font-weight: bold;
+    width: 9rem;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.social-handles {
+    border-top: 1px solid #d8d3d3;
+    padding-top: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+.social-handles div {
+    float: right;
+}
+
+
+
+/* this sections contains mediua queries and resolutions  */
+
+/* --------- mobile ----------- */
+@media screen and (max-width: 480px) {
+    .nav-bar{
+        display: none;
+    }
+    header{
+        height: 15%;
+        /* margin-bottom: 15em */
+    }
+    nav{
+        margin-left: 0;
+        padding-left: 2em;
+        font-size: x-large;
+        background-color: white;
+        width: 100%;
+    }
+    .hero{
+        margin-top: 10em;
+    }
+
+    .hero h2{
+        font-size: x-large;
+        font-weight: bolder;
+    }
+
+    .hero p{
+        width: 40ch;
+        font-size: medium;
+        padding-top: 5px;
+    }
+
+    .top-section{
+        display: grid;
+        grid-template-columns: 100%;
+        padding-top: 3em;
+        /* background-color: none; */
+    }
+    .top-left{
+        padding-left: 10px;
+        /* color: red; */
+    }
+    .top-left h3{
+        width: 100%;
+        font-size: xx-large;
+    }
+    .top-left p {
+        width: 30ch;
+        font-size: large;
+        line-height: 30px;
+    }
+    .top-right {
+        height: 100%;
+    }
+    .strategy {
+        display: grid;
+        grid-template-columns: 100%;
+        margin-bottom: 0;
+        color: var(--TEXTCOLOR);
+    }
+
+    .left-section{
+       margin: 0;
+        background-color: var(--BACKGROUNDCOLOR-1);
+        padding: 2em 1em;
+        height: 18vh;
+    }
+    .left-section h1 {
+        width: 17ch;
+        float: left;
+        margin: 0;
+        position: static;
+    }
+
+    .right-section{
+        padding: 1em 1em;
+        height: 60vh;
+    }
+
+    .brand-container{
+        display: grid;
+        grid-template-columns: 100%;
+       
+     }
+
+     .footer-container {
+        display: block;
+        margin-top: 3em;
+        padding: 3em 8px;
+        height: 10rem;
+        background-color: var(--BACKGROUNDCOLOR-2);
+    }
+
+    .our-contact {
+        display: grid;
+        grid-template-columns: 100%;
+        height: 55rem;
+         padding-left: 1em;
+    }
+
+    .our-contact h2 {
+        font-size: x-large;
+    }
+
+    .our-contact p {
+        width: 30ch;
+    }    
+}
+
+
+/* --------- normal mobile ----------- */
+@media (min-width: 481px) and (max-width: 768px){
+    .nav-bar{
+        display: none;
+    }
+    header{
+        height: 15%;
+        /* margin-bottom: 18em; */
+    }
+    nav{
+        font-size: xx-large;
+        font-weight: bolder;
+        margin-bottom: 1em;
+        margin-left: 2em;
+        padding-left: 2.5rem;
+        background-color: #faf6f6;
+        width: 100%;
+    }
+    .hero{
+        margin-top: 10em;
+        padding-left: 1.5em;
+    }
+
+    .hero h2{
+        font-size: xx-large;
+        font-weight: bolder;
+    }
+
+    .hero p{
+        width: 35ch;
+        font-size: x-large;
+    }
+
+    .top-section{
+        display: grid;
+        grid-template-columns: 100%;
+        padding-top: 3em;
+    }
+    .top-right{
+        height: 100%;
+    }
+    .top-left{
+        padding-left: 15px;
+    }
+    .top-left h3{
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .top-left p {
+        width: 45ch;
+        font-size:large;
+        line-height: 35px;
+    }
+
+    .strategy {
+        display: grid;
+        grid-template-columns: 100%;
+        margin-bottom: 0;
+        color: var(--TEXTCOLOR);
+    }
+
+    .left-section{
+       margin: 0;
+        background-color: var(--BACKGROUNDCOLOR-1);
+        padding: 2em 1em;
+        height: 20vh;
+    }
+    .left-section h1 {
+        width: 17ch;
+        float: left;
+        margin: 0;
+        position: static;
+    }
+
+    .right-section{
+        padding: 1em 1em;
+        height: 50vh;
+    }
+
+    .brand-container{
+        display: grid;
+        grid-template-columns: 100%;
+       
+     }
+
+     .footer-container {
+        display: block;
+        margin-top: 5em;
+        padding: 3em 8px;
+        height: 10rem;
+        background-color: var(--BACKGROUNDCOLOR-2);
+    }
+    .build {
+        margin: 0;
+    }
+    .our-contact {
+        display: grid;
+        grid-template-columns: 100%;
+        height: fit-content;
+         padding-left: 1em;
+    }
+
+    .our-contact h2 {
+        font-size: x-large;
+    }
+
+    .our-contact p {
+        width: 30ch;
+    }
+}
+
+
+/* * --------- tablets ----------- */ 
+@media (min-width: 769px) and (max-width: 1024px){
+    nav h1{
+        font-size: xx-large;
+        margin-left: -50px;
+    }
+    .hero{
+        margin: 5rem 1rem;
+        background-color: #ffffff63;
+    }
+    .hero h2{
+        font-size: xxx-large;
+        font-weight: bolder;
+    }
+    .hero p {
+        font-size: x-large;
+        font-weight: bold;
+        width: 40ch;
+    }
+    .hero button {
+        margin-top: 10px;
+        padding: 1.8rem;
+        width: 13rem;
+        font-weight: bolder;
+    }
+
+    .top-section{
+        margin-bottom: 10rem;
+        grid-template-columns: 50% 50%;
+    }
+    .top-left{
+        height: 50vh;
+        width: 100%;
+        margin-bottom: 5rem;
+        padding: 7rem 2em;
+    }
+    .top-left p {
+        width: 30ch;
+    }
+    .brand-left-section {
+        height: 20rem;
+        padding-top: 5rem;
+    }
+    .left-section h1 {
+        width: 15ch;
+        margin: 8em 0;
+        font-weight: bolder;
+    }
+
+    .footer-container{
+        margin-top: 18rem;
+    }
+    .build {
+        font-size: xx-large;
+        width: 25ch;
+    }
+    .our-contact {
+        margin-top: 3rem;
+        height: fit-content;
+    }
+}
+
+
+/* * --------- large tablets and laptops ----------- */ 
+@media (min-width: 1025px) and (max-width: 12004px){
+    nav h1{
+        font-size: 4rem;
+    }
+    .hero h2{
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+    .hero p {
+        font-size: xx-large;
+        width: 40ch;
+        margin: 1.5rem 0;
+    }
+    .hero button {
+        width: 15rem;
+        padding: 1.5rem;
+        font-size: x-large;
+    }
+    .top-left {
+        padding-left: 1rem;
+    }
+    .top-left h3{
+        font-size: xx-large;
+        width: 100%;
+        margin-bottom: 18px;
+    }
+    .top-left p {
+        width: 40ch;
+        font-size: x-large;
+    }
+    .left-section h1{
+        margin-top: 18rem;
+    }
+    .right-section h3 {
+        font-size: xx-large;
+    }
+    .right-section p {
+        font-size: x-large;
+        line-height: 30px;
+    }
+    .footer-container{
+        margin-top: 18rem;
+    }
+    .footer-container p {
+        font-size: xx-large;
+    }
+    .our-contact{
+        margin-top: 3rem;
+    }
+}
