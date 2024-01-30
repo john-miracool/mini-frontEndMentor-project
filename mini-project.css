@@ -515,6 +515,7 @@ footer button {
 
 /* * --------- large tablets and laptops ----------- */ 
 @media (min-width: 1025px) and (max-width: 12004px){
+
     nav h1{
         font-size: 4rem;
     }
